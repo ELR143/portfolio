@@ -13,3 +13,9 @@ html {
 h1, h2, h3 {
     font-family: 'Montserrat'
 }
+
+.ball {
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0.7;
+  }
