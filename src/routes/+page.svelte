@@ -1,12 +1,5 @@
 <script>
-    
-  
-    let benefits = [
-      { name: "committed to learning", description: "i like lernin" },
-      { name: "a human", description: "i like beanz" },
-      { name: "hungry", description: "pls bring beans?" },
-    ];
-    
+    import portrait from '$lib/assets/IMG_9240.png'
   </script>
   
   <main class="scroll-smooth flex flex-col flex-1 p-4">
@@ -19,20 +12,23 @@
       >
         <h2 class="font-semibold text-4xl sm:text-5xl md:text-6xl">
           Hi! I'm <span class="font-bold bg-gradient-to-r from-violet-500 to-lime-400 text-transparent bg-clip-text">Emma</span> <br />
-          Full Stack <span class="font-bold bg-gradient-to-r from-violet-500 to-lime-400 text-transparent bg-clip-text">Developer</span>
+          Junior Full Stack <span class="font-bold bg-gradient-to-r from-violet-500 to-lime-400 text-transparent bg-clip-text">Developer</span>
         </h2>
         <p class="text-base sm:text-lg md:text-xl">
-          Welcome to my portfolio
+          After recently graduating from the Northcoders Software Development bootcamp, I am excited to apply my new skills as a Junior Software Developer.
+          
         </p>
-       
       </div>
-      <div class="relative shadow-2xl grid place-items-center">
+
+      <div class="relative grid place-items-center">
         <img
-          src={""}
-          alt="Image coming soon"
-          class="object-cover z-[2] max-h-[70vh]"
+        src={portrait}
+        alt="Portrait"
+        class="rounded-lg max-h-[60vh]"
         />
       </div>
+
+      
     </section>
   
     

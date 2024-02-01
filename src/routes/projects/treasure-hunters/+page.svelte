@@ -1,19 +1,114 @@
+<script>
+  import login from "$lib/assets/treasure-hunters/treasure-hunters-login.png";
+  import home from "$lib/assets/treasure-hunters/treasure-hunters-home.png";
+  import leaderboard from "$lib/assets/treasure-hunters/treasure-hunters-leaderboard.png";
+  import map from "$lib/assets/treasure-hunters/treasure-hunters-map.png";
+  import mapZoomed from "$lib/assets/treasure-hunters/treasure-hunters-map-zoomed.png";
+  import github from "$lib/assets/icons/github-icon.svg";
+  import treasure from "$lib/assets/treasure-hunters/treasure-map-svgrepo-com.svg";
+</script>
 
-<section class='flex flex-col'> 
-<h1 class='py-4 text-5xl font-semibold text-center'>Treasure Hunters</h1>
-<p class="text-center sm:text-lg md:text-xl">
-    Treasure Hunters is a full stack web application developed by our team of 6 developers for our final project at Northcoders.
-  </p>
+<section class="p-10 lg:p-32 flex flex-col gap-24">
+  <h1 class="pt-4 text-5xl font-semibold text-center">
+    <span
+      class="font-bold bg-gradient-to-r from-cyan-400 to-orange-500 text-transparent bg-clip-text"
+      >Treasure Hunters</span
+    >
+  </h1>
+
+  <div class="flex flex-row gap-16">
+    <p class="text-base sm:text-lg md:text-xl w-3/4">
+      Treasure Hunters is a full stack web application developed by our team of
+      6 developers for our final project at Northcoders. We chose to build the
+      backend with Django which required most of our team to teach ourselves
+      Python over the Christmas holidays. We 
+    </p>
+    <div class="flex flex-col gap-4 justify-center">
+      <div class="flex justify-start items-center gap-4">
+        <a
+          href="https://github.com/ELR143/treasure-hunt-frontend"
+          target="_blank"
+        >
+          <img
+            src={github}
+            class="w-8 bg-gradient-to-r from-cyan-400 to-orange-500 hover:transform hover:scale-125 hover:transition-colors hover:bg-gradient-to-r hover:from-orange-500 hover:to-cyan-400 rounded-lg p-1"
+            alt="link to frontend"
+          />
+        </a>
+        <p>Frontend</p>
+      </div>
+
+      <div class="flex justify-start items-center gap-4">
+        <a
+          href="https://github.com/LW95x/treasure-hunt-backend-host"
+          target="_blank"
+        >
+          <img
+            src={github}
+            class="w-8 bg-gradient-to-r from-cyan-400 to-orange-500 hover:transform hover:scale-125 hover:transition-colors hover:bg-gradient-to-r hover:from-orange-500 hover:to-cyan-400 rounded-lg p-1"
+            alt="link to frontend"
+          />
+        </a>
+        <p>Backend</p>
+      </div>
+
+      <div class="flex justify-start items-center gap-4">
+        <a href="https://treasure-hunters.netlify.app/" target="_blank">
+          <img
+            src={treasure}
+            class="w-8 bg-gradient-to-r from-cyan-400 to-orange-500 hover:transform hover:scale-125 hover:transition-colors hover:bg-gradient-to-r hover:from-orange-500 hover:to-cyan-400 rounded-lg p-1"
+            alt="link to frontend"
+          />
+        </a>
+        <p>Try it yourself</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-wrap justify-center m-4">
+    <img
+      class="w-3/4 self-center mb-8"
+      src={login}
+      alt="treasure hunters home login"
+    />
+    <p class="text-base sm:text-lg md:text-xl mb-8">
+      Users can sign up for an account to create their profile. Authentication
+      is handled efficiently by Django, which automatically hashes the user's password.
+    </p>
+
+    <img class="w-3/4 mb-8" src={home} alt="treasure hunters home page" />
+    <p class="text-base sm:text-lg md:text-xl pb-8">
+      The home page helps the user navigate to different pages. You can navigate back to this page from anywhere by pressin the top left icon, or to the profile page by pressing the top right.
+    </p>
+
+    <div class='flex flex-wrap justify-center'>
+      <img class="w-5/12 mb-8 mr-4" src={map} alt="treasure hunters home map" />
+      <img
+        class="w-5/12 mb-8 ml-4"
+        src={mapZoomed}
+        alt="treasure hunters zoomed map"
+      />
+      <p class="text-base sm:text-lg md:text-xl mb-8">
+        The map tracks the user's location in real time, which can be toggled on
+        and off. The map shows the location of treasures as clusters initially;
+        when the user zooms in to a certain level, the treasure radius appears.
+        The user must walk around inside the radius, pressing the 'Scan for
+        Treasures!' button periodically. Once the user is close enough, the radius
+        will disappear and the treasure will pop up, allowing the user to click it
+        and add it to their collection.
+      </p>
+    </div>
+    
+
+    <img
+      class="w-3/4 self-center mb-8"
+      src={leaderboard}
+      alt="treasure hunters leaderboard"
+    />
+    <p class="text-base sm:text-lg md:text-xl mb-8">
+      The leaderboard compares the database of users based on different
+      criteria, such as number of treasures. Users can also add other users as
+      friends.
+    </p>
+  </div>
 </section>
-
-
-
-
-
-  https://treasure-hunters.netlify.app/
-
-  https://github.com/ELR143/treasure-hunt-frontend
-  
-  https://github.com/LW95x/treasure-hunt-backend-host
-  
-  https://github.com/ELR143/portfolio
