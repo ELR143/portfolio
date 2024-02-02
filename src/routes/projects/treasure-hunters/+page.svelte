@@ -19,9 +19,10 @@
   <div class="flex flex-row gap-16">
     <p class="text-base sm:text-lg md:text-xl w-3/4">
       Treasure Hunters is a full stack web application developed by our team of
-      6 developers for our final project at Northcoders. We chose to build the
+      6 developers for the final project at Northcoders. We chose to build the
       backend with Django which required most of our team to teach ourselves
-      Python over the Christmas holidays. We 
+      Python over the Christmas holidays. The frontend was built with Next.js as
+      we were familiar with React from the Bootcamp and wanted to try it out.
     </p>
     <div class="flex flex-col gap-4 justify-center">
       <div class="flex justify-start items-center gap-4">
@@ -73,15 +74,19 @@
     />
     <p class="text-base sm:text-lg md:text-xl mb-8">
       Users can sign up for an account to create their profile. Authentication
-      is handled efficiently by Django, which automatically hashes the user's password.
+      is handled efficiently by Django, which automatically hashes the user's
+      password.
     </p>
 
     <img class="w-3/4 mb-8" src={home} alt="treasure hunters home page" />
     <p class="text-base sm:text-lg md:text-xl pb-8">
-      The home page helps the user navigate to different pages. You can navigate back to this page from anywhere by pressin the top left icon, or to the profile page by pressing the top right.
+      The home page helps the user navigate to different pages. You can navigate
+      back to this page from anywhere by pressing the top left icon, or to the
+      profile page by pressing the top right. The file-based routing in Next.js
+      made this very easy to implement.
     </p>
 
-    <div class='flex flex-wrap justify-center'>
+    <div class="flex flex-wrap justify-center">
       <img class="w-5/12 mb-8 mr-4" src={map} alt="treasure hunters home map" />
       <img
         class="w-5/12 mb-8 ml-4"
@@ -89,16 +94,15 @@
         alt="treasure hunters zoomed map"
       />
       <p class="text-base sm:text-lg md:text-xl mb-8">
-        The map tracks the user's location in real time, which can be toggled on
-        and off. The map shows the location of treasures as clusters initially;
-        when the user zooms in to a certain level, the treasure radius appears.
-        The user must walk around inside the radius, pressing the 'Scan for
-        Treasures!' button periodically. Once the user is close enough, the radius
-        will disappear and the treasure will pop up, allowing the user to click it
-        and add it to their collection.
+        GPS tracks the user's location (with permission) in real time, which can
+        be toggled on and off. The map shows the location of treasures as
+        clusters initially; when the user zooms in to a certain level, the
+        treasure radius appears. The user must walk around inside the radius,
+        pressing the 'Scan for Treasures!' button periodically. Once the user is
+        close enough, the radius will disappear and the treasure will pop up,
+        allowing the user to click it and add it to their collection.
       </p>
     </div>
-    
 
     <img
       class="w-3/4 self-center mb-8"

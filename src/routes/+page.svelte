@@ -12,7 +12,7 @@
       >
         <h2 class="font-semibold text-4xl sm:text-5xl md:text-6xl">
           Hi! I'm <span class="font-bold bg-gradient-to-r from-violet-500 to-lime-400 text-transparent bg-clip-text">Emma</span> <br />
-          Junior Full Stack <span class="font-bold bg-gradient-to-r from-violet-500 to-lime-400 text-transparent bg-clip-text">Developer</span>
+          Junior Software <span class="font-bold bg-gradient-to-r from-violet-500 to-lime-400 text-transparent bg-clip-text">Developer</span>
         </h2>
         <p class="text-base sm:text-lg md:text-xl">
           After recently graduating from the Northcoders Software Development bootcamp, I am excited to apply my new skills as a Junior Software Developer.
