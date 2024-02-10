@@ -5,8 +5,6 @@
   import BallAnimation from "../components/BallAnimation.svelte";
 
   let y;
-  let innerHeight = 0;
-  let innerWidth = 0;
 
   function goToTop() {
     document.body.scrollIntoView()
@@ -21,13 +19,11 @@ class="relative flex flex-col max-w-[1400px] mx-auto w-full text-sm sm:text-base
     <i class="fa-solid fa-arrow-up grid place-items-center aspect-square"></i>
   </button>
 </div>
+<div>
+  <BallAnimation />
+</div>
 <Header y={y}/>
 
 <slot />
 <Footer />
 </div>
-<div>
-  <BallAnimation />
-</div>
-
-<svelte:window bind:scrollY={y} bind:innerHeight bind:innerWidth />
