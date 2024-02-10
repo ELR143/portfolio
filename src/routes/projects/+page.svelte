@@ -53,8 +53,6 @@
         Treasure Hunters is a GPS-based web application built during our final project phase with Northcoders.
       </p>
       <div class='flex flex-row justify-center gap-3 xl:gap-6 mt-5'>
-
-
         <img class='w-12 h-12 'src={next} alt='next.js logo'/>
         <img class='w-12 h-12 'src={tailwind} alt='tailwindcss logo'/>
         <img class='w-12 h-12 'src={django} alt='django logo'/>

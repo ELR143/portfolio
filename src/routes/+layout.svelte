@@ -16,10 +16,10 @@
 <div
   class="relative flex flex-col max-w-[1400px] mx-auto w-full text-sm sm:text-base min-h-screen"
 >
-<Header {y} />
+  <Header {y} />
 
-<slot />
-<Footer/>
+  <slot />
+  <Footer />
 </div>
 <div
   class={"fixed bottom-0 w-full duration-200 flex p-10 " +
@@ -27,7 +27,6 @@
       ? "opacity-full pointer-events-auto"
       : "opacity-0 pointer-events-none")}
 >
-
   <button
     on:click={goToTop}
     class="ml-auto rounded-full aspect-square bg-violet-700 text-slate-950 px-3 sm:px-4 hovering:bg-slate-800 cursor-pointer"

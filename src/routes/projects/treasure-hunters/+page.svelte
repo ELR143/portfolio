@@ -1,4 +1,9 @@
 <script>
+  import django from "$lib/assets/icons/django-icon.svg"
+  import next from "$lib/assets/icons/nextjs-icon.svg"
+  import psql from "$lib/assets/icons/postgresql.svg"
+  import tailwind from "$lib/assets/icons/tailwindcss-icon.svg"
+  import maps from "$lib/assets/icons/google-maps.svg"
   import login from "$lib/assets/treasure-hunters/treasure-hunters-login.png";
   import home from "$lib/assets/treasure-hunters/treasure-hunters-home.png";
   import leaderboard from "$lib/assets/treasure-hunters/treasure-hunters-leaderboard.png";
@@ -8,13 +13,20 @@
   import treasure from "$lib/assets/treasure-hunters/treasure-map-svgrepo-com.svg";
 </script>
 
-<section class="p-10 lg:p-32 flex flex-col gap-24">
-  <h1 class="pt-4 text-5xl font-semibold text-center">
+<section class="p-10 lg:p-32 flex flex-col gap-12">
+  <h1 class="text-5xl md:text-7xl font-semibold text-center">
     <span
       class="font-bold bg-gradient-to-r from-cyan-400 to-orange-500 text-transparent bg-clip-text"
       >Treasure Hunters</span
     >
   </h1>
+  <div class='flex flex-row justify-center gap-6 xl:gap-6'>
+    <img class='w-12 h-12 'src={next} alt='next.js logo'/>
+    <img class='w-12 h-12 'src={tailwind} alt='tailwindcss logo'/>
+    <img class='w-12 h-12 'src={django} alt='django logo'/>
+    <img class='w-12 h-12 'src={psql} alt='postgreSQL logo'/>
+    <img class='w-12 h-12 'src={maps} alt='google maps logo'/>
+  </div>
 
   <div class="flex flex-row gap-16">
     <p class="text-base sm:text-lg md:text-xl w-3/4">
