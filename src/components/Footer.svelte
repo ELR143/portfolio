@@ -1,11 +1,11 @@
 <footer
-  class="py-6 bg-slate-950 border-t border-solid border-violet-950 flex flex-col gap-4 sm:gap-8 justify-center items-center"
+  class="py-6 bg-slate-950 border-t border-solid border-violet-950 flex flex-col gap-4 sm:gap-8 justify-center items-center z-[100]"
 >
   <p class="px-4 py-2 bg-white text-slate-950 font-medium rounded-lg">
     Connect with me &darr;
   </p>
   <div class="flex flex-col gap-4 items-center justify-center">
-    <p class="">
+    <p>
       <b class="pr-2">Email</b>
       <a
         href="mailto:emmlou143@gmail.com"
@@ -14,7 +14,7 @@
       >
     </p>
 
-    <p class="">
+    <p>
       <b class="pr-2">Github</b>
       <a
         href="https://github.com/ELR143"
@@ -30,7 +30,8 @@
         >
       </a>
     </p>
-    <p class="">
+
+    <p>
       <b class="pr-2">LinkedIn</b>
       <a
         href="https://www.linkedin.com/in/emma-richardson143"
